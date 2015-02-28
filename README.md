@@ -4,7 +4,7 @@ Injects selected keys from and object into another.
 **Version**: 0.0.1  
 **Author**: Pablo Andrés Dorado Suárez <pandres95@boolinc.co>  
 
-##object-injector~General Injector(injectee, injecter, [keys])
+##object-injector(injectee, injecter, [keys])
 Injects selected keys from an object into another object.
 
 **Params**
