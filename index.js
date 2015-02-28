@@ -2,7 +2,7 @@
  * @module object-injector
  * @description Object Injector
  * @author Pablo Andrés Dorado Suárez <pandres95@boolinc.co>
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 'use strict';
@@ -24,7 +24,12 @@ module.exports = function(injectee, injecter, keys){
     );
 
     _.each(props, function(key){
-        injectee[key] = injecter[key];
+        Object.defineProperty(injectee, key, {
+            value: injecter[key],
+            writable: true,
+            enumerable: true,
+            configurable: true
+        });
     });
 
     return injectee;
