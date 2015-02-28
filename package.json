@@ -1,6 +1,6 @@
 {
     "name": "object-injector",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Injects properties from an origin object into another",
     "main": "index.js",
     "scripts": {
